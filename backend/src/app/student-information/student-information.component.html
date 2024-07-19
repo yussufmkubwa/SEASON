@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Registered Students</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th> Name</th>
+        <th>Email</th>
+        
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.Name }}</td>
+        <td>{{ student.email }}</td>
+        
+        <td>{{ student.course }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Logout Button -->
+  <button (click)="logout()" class="logout-button">Logout</button>
+</div>

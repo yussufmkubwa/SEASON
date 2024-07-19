@@ -1,0 +1,53 @@
+<div class="form-container">
+    <img src="student.jpg" alt="">
+    <h1>Online Student Registration System</h1>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="register-name">Full Name</label>
+        <input type="text" id="register-name" formControlName="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" formControlName="email" required>
+      </div>
+      <div class="form-group">
+        <label for="register-password">Password</label>
+        <input type="password" id="register-password" formControlName="password" required>
+      </div>
+      <div class="form-group">
+        <label for="register-dob">Date of Birth</label>
+        <input type="date" id="register-dob" formControlName="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="register-gender">Gender</label>
+        <select id="register-gender" formControlName="gender" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="register-school">School</label>
+        <input type="text" id="register-school" formControlName="school" required>
+      </div>
+      <div class="form-group">
+        <label for="course-select">Select Course</label>
+        <select id="course-select" formControlName="course" required>
+          <option value="">Select Course</option>
+          <option value="math">Mathematics</option>
+          <option value="science">Science</option>
+          <option value="history">History</option>
+          <option value="literature">Literature</option>
+          <option value="programming">Programming</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+    <div class="switch-link">
+      <a routerLink="/login">Switch to Login</a>
+    </div>
+  </div>
+  

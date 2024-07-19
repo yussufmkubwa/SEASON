@@ -1,0 +1,59 @@
+/* src/app/home/home.component.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.navigation {
+  width: 20%;
+  background-color: #007BFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  background-color: #0056b3;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+  background-color: #003d80;
+}
+
+.content {
+  width: 80%;
+  padding: 40px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+.content h1 {
+  margin-top: 0;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+}
